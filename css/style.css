@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #E5E5E5;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  min-height: 100vh;
+  background-image: url("../img/background-header.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.49), rgba(0, 0, 0, 0.49));
+}
+.header h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFFFFF;
+}
+.header h2 span {
+  font-size: 24px;
+  font-weight: 900;
+  color: #FF6332;
+}
+
+main .photo {
+  margin-bottom: 50px;
+}
+main .photo ul {
+  list-style: none;
+}
+main .photo ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+main .photo ul li img {
+  max-width: 100%;
+  height: auto;
+}
+main .instagram {
+  position: relative;
+}
+main .instagram::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.49), rgba(0, 0, 0, 0.49));
+}
+main .instagram .container {
+  padding: 0;
+}
+main .instagram h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFFFFF;
+}
+main .instagram h2 span {
+  font-weight: 900;
+  color: #FF6332;
+}
+main .instagram ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+main .instagram ul li {
+  flex: 50%;
+  line-height: 0;
+}
+main .instagram ul li img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer {
+  min-height: 40px;
+  background-color: #000;
+}
+.footer p {
+  padding-top: 10px;
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+@media screen and (min-width: 499px) {
+  .header h2 {
+    font-size: 24px;
+  }
+  .header h2 span {
+    font-size: 30px;
+  }
+
+  main .photo ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+  }
+  main .photo ul li {
+    flex: 48%;
+  }
+  main .photo ul li:last-child {
+    text-align: center;
+  }
+  main .photo ul li:nth-of-type(2n+1) {
+    margin-right: 15px;
+  }
+  main .photo ul li img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media screen and (min-width: 719px) {
+  main .instagram ul li {
+    flex: 25%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .header {
+    margin-bottom: 64px;
+  }
+  .header h2 {
+    font-size: 48px;
+  }
+  .header h2 span {
+    font-size: 48px;
+  }
+
+  main .photo {
+    margin-bottom: 64px;
+  }
+  main .photo ul li {
+    line-height: 4;
+    flex: 32%;
+  }
+  main .photo ul li:not(:last-child) {
+    margin-bottom: 0px;
+  }
+  main .photo ul li:last-child {
+    text-align: unset;
+  }
+  main .photo ul li:nth-of-type(2n+1) {
+    margin-right: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
